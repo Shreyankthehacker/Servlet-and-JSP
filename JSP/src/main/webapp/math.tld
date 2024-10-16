@@ -1,0 +1,24 @@
+<taglib>
+  <tlib-version>1.0</tlib-version>
+    <jsp-version>4.0</jsp-version>
+<tag>
+
+
+<name>sum</name>
+<tagclass> packages.MyHandler</tagclass>
+
+
+<attribute>
+<name> num1</name>
+<required>true</required>
+<rtexpervalue>true</rtexpervalue>
+</attribute>
+
+
+<attribute> 
+<name>num2</name>
+<required>true</required>
+<rtexpervalue>true</rtexpervalue>
+</attribute>
+
+</tag></taglib>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .registration-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+        .registration-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .registration-container input, .registration-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .registration-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .registration-container button:hover {
+            background-color: #45a049;
+        }
+        .subjects-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .subjects-table th, .subjects-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .subjects-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="registration-container">
+    <h2>Student CGPA calculator</h2>
+    <form action="MyServlet" >
+     
+        <table class="subjects-table">
+            <thead>
+                <tr>
+           
+                    <th>Enter the Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td><input type="text" name="coa" placeholder="Computer Architecture and Organization" required></td>
+                </tr>
+                <tr>
+                
+                    <td><input type="text" name="dbms" placeholder="Database Management Systems" required></td>
+                </tr>
+                <tr>
+                
+                    <td><input type="text" name="software" placeholder="Software Engineering" required></td>
+                </tr>
+                <tr>
+                
+                    <td><input type="text" name="mpmc" placeholder="Microprocessors and Microcontrollers"  required></td>
+                </tr>
+                <tr>
+                   
+                    <td><input type="text" name="maths" placeholder="Discrete Mathematical Structures" required></td>
+                </tr>
+                <tr>
+                    
+                    <td><input type="text" name="hst" placeholder="Engineering for Social Empowerment" required></td>
+                </tr>
+                <tr>
+                  <td><input type="text" name="coalab" placeholder="Computer Architecture and Organization Lab" required></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="dbmslab" placeholder="Database Management Systems Lab" required></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="mpmclab" placeholder="Microprocessors and Microcontrollers Lab"required></td>
+                </tr>
+                <tr>
+                   
+                    <td><input type="text" name="python" placeholder="IT Workshop – III" required></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="otp" placeholder="Engineering Creativity, Innovation and Design"  required></td>
+                </tr>  
+                <tr>
+                    <td><input type="text" name="cg" placeholder="CGPA before"  required></td>
+                </tr>                
+                
+            </tbody>
+        </table>
+
+        <button type="submit">calculate</button>
+    </form>
+</div>
+
+</body>
+</html>
